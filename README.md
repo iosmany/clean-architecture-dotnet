@@ -8,6 +8,7 @@ Domain-Driven Design (DDD): Encapsulates core business logic within the domain l
 Test-Driven Development (TDD): Includes unit and integration tests, following TDD best practices to ensure a robust codebase.
 Modular Design: Enables flexible deployment and easy feature extension.
 Cloud-Ready: Configured for deployment in cloud environments, with a focus on scalability and reliability.
+
 Technology Stack
 .NET Core: Backend API with RESTful services.
 Entity Framework Core: For database interactions, with migrations for easy schema management.
