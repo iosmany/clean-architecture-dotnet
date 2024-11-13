@@ -1,0 +1,248 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{660B7A0A-133D-4C67-B6D8-CA94CE158D12}|..\\ecommerce.core\\ecommerce.core.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.core\\commands\\pessimisticoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660B7A0A-133D-4C67-B6D8-CA94CE158D12}|..\\ecommerce.core\\ecommerce.core.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.core\\commands\\optimisticoperation.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA48B75-072E-41C0-B341-AA019B11EDE6}|..\\ecommerce.application\\ecommerce.application.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.application\\customer\\commands\\registercustomercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C482B0-1B8A-4A88-8CC6-73CB943CFF25}|ecommerce.web.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\controllers\\customer\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C482B0-1B8A-4A88-8CC6-73CB943CFF25}|ecommerce.web.csproj|solutionrelative:controllers\\customer\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C482B0-1B8A-4A88-8CC6-73CB943CFF25}|ecommerce.web.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\controllers\\account\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C482B0-1B8A-4A88-8CC6-73CB943CFF25}|ecommerce.web.csproj|solutionrelative:controllers\\account\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C482B0-1B8A-4A88-8CC6-73CB943CFF25}|ecommerce.web.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\controllers\\account\\accountcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C482B0-1B8A-4A88-8CC6-73CB943CFF25}|ecommerce.web.csproj|solutionrelative:controllers\\account\\accountcontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6AB1B62-EF21-49D4-ACCB-23085C4CB6C8}|..\\ecommerce.domain\\ecommerce.domain.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.domain\\entities\\products\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6AB1B62-EF21-49D4-ACCB-23085C4CB6C8}|..\\ecommerce.domain\\ecommerce.domain.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.domain\\entities\\products\\producttests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8CA48B75-072E-41C0-B341-AA019B11EDE6}|..\\ecommerce.application\\ecommerce.application.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.application\\customer\\customerfilterprovider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660B7A0A-133D-4C67-B6D8-CA94CE158D12}|..\\ecommerce.core\\ecommerce.core.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.core\\ef\\predicatebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6AB1B62-EF21-49D4-ACCB-23085C4CB6C8}|..\\ecommerce.domain\\ecommerce.domain.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.domain\\entities\\sales\\saletests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C6AB1B62-EF21-49D4-ACCB-23085C4CB6C8}|..\\ecommerce.domain\\ecommerce.domain.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.domain\\entities\\sales\\salelinetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51C482B0-1B8A-4A88-8CC6-73CB943CFF25}|ecommerce.web.csproj|d:\\fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51C482B0-1B8A-4A88-8CC6-73CB943CFF25}|ecommerce.web.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PessimisticOperation.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.core\\Commands\\PessimisticOperation.cs",
+              "RelativeDocumentMoniker": "..\\ecommerce.core\\Commands\\PessimisticOperation.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.core\\Commands\\PessimisticOperation.cs",
+              "RelativeToolTip": "..\\ecommerce.core\\Commands\\PessimisticOperation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:15:04.697Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "OptimisticOperation.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.core\\Commands\\OptimisticOperation.cs",
+              "RelativeDocumentMoniker": "..\\ecommerce.core\\Commands\\OptimisticOperation.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.core\\Commands\\OptimisticOperation.cs",
+              "RelativeToolTip": "..\\ecommerce.core\\Commands\\OptimisticOperation.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:15:02.554Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\Controllers\\Customer\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Customer\\CustomerController.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\Controllers\\Customer\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\Customer\\CustomerController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAB4AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T01:58:21.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AccountControllerTest.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\Controllers\\Account\\AccountControllerTest.cs",
+              "RelativeDocumentMoniker": "Controllers\\Account\\AccountControllerTest.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\Controllers\\Account\\AccountControllerTest.cs",
+              "RelativeToolTip": "Controllers\\Account\\AccountControllerTest.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T01:58:03.938Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\Controllers\\Account\\AccountController.cs",
+              "RelativeDocumentMoniker": "Controllers\\Account\\AccountController.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\Controllers\\Account\\AccountController.cs",
+              "RelativeToolTip": "Controllers\\Account\\AccountController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T01:58:03.144Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RegisterCustomerCommand.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.application\\Customer\\Commands\\RegisterCustomerCommand.cs",
+              "RelativeDocumentMoniker": "..\\ecommerce.application\\Customer\\Commands\\RegisterCustomerCommand.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.application\\Customer\\Commands\\RegisterCustomerCommand.cs",
+              "RelativeToolTip": "..\\ecommerce.application\\Customer\\Commands\\RegisterCustomerCommand.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:22:16.254Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ProductTests.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.domain\\Entities\\Products\\ProductTests.cs",
+              "RelativeDocumentMoniker": "..\\ecommerce.domain\\Entities\\Products\\ProductTests.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.domain\\Entities\\Products\\ProductTests.cs",
+              "RelativeToolTip": "..\\ecommerce.domain\\Entities\\Products\\ProductTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:13:23.494Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CustomerFilterProvider.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.application\\Customer\\CustomerFilterProvider.cs",
+              "RelativeDocumentMoniker": "..\\ecommerce.application\\Customer\\CustomerFilterProvider.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.application\\Customer\\CustomerFilterProvider.cs",
+              "RelativeToolTip": "..\\ecommerce.application\\Customer\\CustomerFilterProvider.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAowCkAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:07:37.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "PredicateBuilder.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.core\\EF\\PredicateBuilder.cs",
+              "RelativeDocumentMoniker": "..\\ecommerce.core\\EF\\PredicateBuilder.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.core\\EF\\PredicateBuilder.cs",
+              "RelativeToolTip": "..\\ecommerce.core\\EF\\PredicateBuilder.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAcwD8AAAAXAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T00:08:01.643Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Product.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.domain\\Entities\\Products\\Product.cs",
+              "RelativeDocumentMoniker": "..\\ecommerce.domain\\Entities\\Products\\Product.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.domain\\Entities\\Products\\Product.cs",
+              "RelativeToolTip": "..\\ecommerce.domain\\Entities\\Products\\Product.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T23:03:38.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "SaleTests.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.domain\\Entities\\Sales\\SaleTests.cs",
+              "RelativeDocumentMoniker": "..\\ecommerce.domain\\Entities\\Sales\\SaleTests.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.domain\\Entities\\Sales\\SaleTests.cs",
+              "RelativeToolTip": "..\\ecommerce.domain\\Entities\\Sales\\SaleTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAlAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T22:50:35.517Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SaleLineTests.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.domain\\Entities\\Sales\\SaleLineTests.cs",
+              "RelativeDocumentMoniker": "..\\ecommerce.domain\\Entities\\Sales\\SaleLineTests.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.domain\\Entities\\Sales\\SaleLineTests.cs",
+              "RelativeToolTip": "..\\ecommerce.domain\\Entities\\Sales\\SaleLineTests.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T22:50:34.351Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Fuentes\\cleanarchitecture\\clean-architecture-dotnet\\ecommerce.web\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-12T22:07:43.555Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
