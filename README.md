@@ -1,6 +1,6 @@
 eCommerce Solution - Clean Architecture (.NET)
 
-This project is an eCommerce solution built with .NET and follows the principles of Clean Architecture. It demonstrates a scalable, maintainable, and testable approach to software design, ideal for modern web applications.
+This project is mockup built with .NET and follows the principles of Clean Architecture. It demonstrates a scalable, maintainable, and testable approach to software design, ideal for modern web applications.
 
 Key Features
 Layered Architecture: Follows Clean Architecture principles, separating concerns between application layers (Domain, Application, Infrastructure, and Presentation).
@@ -16,3 +16,12 @@ PostgreSQL / SQL Server: Recommended databases, adaptable to other SQL/NoSQL dat
 Automapper: Simplifies data mapping between layers.
 Dependency Injection: Ensures modularity and testability.
 Docker: Containerization support for easy deployment.
+
+----------------------------------------------------
+Requirements
+
+Should be Docker installed
+
+For running redis you should open command console on root folder and run:
+> docker-compose up -d
+This is going to set up redis on your maching by executing the .yml config file.
