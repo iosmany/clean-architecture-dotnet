@@ -7,20 +7,17 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Account\" />
-    <Folder Include="Sale\" />
-    <Folder Include="Product\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="LanguageExt.Core" Version="4.4.9" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.11" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="8.0.0" />
+    <PackageReference Include="Moq" Version="4.20.72" />
+    <PackageReference Include="Moq.AutoMock" Version="3.5.0" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\ecommerce.core\ecommerce.core.csproj" />
     <ProjectReference Include="..\ecommerce.domain\ecommerce.domain.csproj" />
+    <ProjectReference Include="..\ecommerce.infrastructure\ecommerce.infrastructure.csproj" />
   </ItemGroup>
 
 </Project>

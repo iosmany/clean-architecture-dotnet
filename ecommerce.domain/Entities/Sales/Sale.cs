@@ -5,40 +5,29 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace ecommerce.domain.Entities.Sales
 {
     [Table("Sales")]
-    public partial class Sale : Audit, IEntity
+    public class Sale : AuditEntity
     {
-        public Sale()
+        private Sale()
         {
-            _saleLines = new List<SaleLine>();
         }
 
-        public Sale(Customers.Customer customer, List<SaleLine> saleLines) : this()
+        public Sale(Customers.Customer customer, Address address) : this()
         {
-            Customer=customer;
-            _saleLines = saleLines;
+            Customer = customer;
+            Address = address;
         }
 
-        public long Id { get; }
-
-        [Column("Customer"), GtZero]
-        public long CustomerId { get; private set; }
+        public virtual Address Address { get; private set; }
         public virtual Customers.Customer? Customer { get; private set; } //lazy loading
+        public DateTimeOffset Date { get; private set; }
 
-        [NotDefault]
-        public DateTimeOffset Date { get; set; }
 
-        List<SaleLine> _saleLines;
-        public virtual IReadOnlyCollection<SaleLine> SaleLines
+        readonly List<SaleLine> _saleLines = new List<SaleLine>();
+        public virtual IReadOnlyCollection<SaleLine> SaleLines => _saleLines;
+
+        public void NewSalesLine(Product product, int quantity)
         {
-            get => _saleLines;
-        }
-    }
-
-    public partial class Sale
-    {
-        public SaleLine NewSaleLine(Product product, int quantity)
-        {
-            return new SaleLine(product, quantity);
+            _saleLines.Add(new SaleLine(product, quantity, this));
         }
     }
 }

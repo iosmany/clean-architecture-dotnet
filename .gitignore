@@ -10,3 +10,8 @@
 /ecommerce.core/bin/Debug/net8.0
 /ecommerce.infrastructure/bin/Debug/net8.0
 /ecommerce.persistence/obj
+/ecommerce.domain/bin/Debug/net8.0
+/.vs
+/ecommerce.specification/obj/Debug/net8.0
+/ecommerce.specification/obj
+/ecommerce.specification/bin/Debug/net8.0

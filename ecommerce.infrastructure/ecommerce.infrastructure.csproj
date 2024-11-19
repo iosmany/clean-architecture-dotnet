@@ -8,7 +8,6 @@
 
   <ItemGroup>
     <Folder Include="CurrencyApi\" />
-    <Folder Include="Inventory\" />
     <Folder Include="Paypal\" />
   </ItemGroup>
 

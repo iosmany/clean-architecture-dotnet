@@ -4,10 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ecommerce.domain
+namespace ecommerce.application.Customer
 {
-    public interface IEntity
+    internal class CustomerModel
     {
-        long Id { get; }
     }
 }

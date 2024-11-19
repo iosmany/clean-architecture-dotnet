@@ -1,18 +1,25 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
-namespace ecommerce.persistence.Customer
+namespace ecommerce.persistence.Customer;
+
+using ecommerce.domain.Entities;
+using ecommerce.domain.Entities.Customers;
+using LanguageExt.UnsafeValueAccess;
+
+internal class CustomerConfigurations : IEntityTypeConfiguration<Customer>
 {
-    internal class CustomerConfigurations : IEntityTypeConfiguration<ecommerce.domain.Entities.Customers.Customer>
+    public void Configure(EntityTypeBuilder<Customer> builder)
     {
+        builder.ToTable("Customers")
+            .HasKey(e => e.Id);
 
-        public void Configure(Microsoft.EntityFrameworkCore.Metadata.Builders.EntityTypeBuilder<ecommerce.domain.Entities.Customers.Customer> builder)
+        builder.OwnsOne(e => e.Name, onb =>
         {
-            
-        }
+            onb.Property(p=>p.FirstName).HasColumnName("FirstName");
+            onb.Property(p => p.LastName).HasColumnName("LastName");
+        });
+
+        builder.Property(e=> e.Email).HasConversion(p=> p.Value, v=>Email.Create(v).ValueUnsafe());
     }
 }

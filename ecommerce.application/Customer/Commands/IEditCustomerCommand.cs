@@ -6,10 +6,8 @@ using System.Threading.Tasks;
 
 namespace ecommerce.application.Customer.Commands
 {
-    public class RegisterCustomerModel
+    internal interface IEditCustomerCommand
     {
-        public string FirstName { get; set; }
-        public string? LastName { get; set; }
-        public DateOnly? DoB { get; set; }
+        Task ExcecuteAsync(EditCustomerModel model, CancellationToken cancellationToken);
     }
 }

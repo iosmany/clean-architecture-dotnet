@@ -1,44 +1,18 @@
-﻿using ecommerce.core;
-using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
+﻿namespace ecommerce.domain.Entities.Customers;
 
-namespace ecommerce.domain.Entities.Customers
+public class Customer : AuditEntity
 {
-    [Table("Customers")]
-    public partial class Customer : Audit, IEntity
+    protected Customer() //we make protected the default constructor to avoid the creation of a Customer without a Name
     {
-        public Customer()
-        {
-            FirstName = string.Empty;
-        }
-        public Customer(string firstName, string? lastName=null)
-        {
-            FirstName = firstName;
-            LastName = lastName;
-        }
-
-        [Key, DatabaseGenerated(DatabaseGeneratedOption.None)]
-        public long Id { get; set; }
-
-        [MaxLength(80)]
-        [Required(AllowEmptyStrings = false)]
-        public string FirstName { get; private set; }
-        [MaxLength(80)]
-        public string? LastName { get; private set; }
-        public DateOnly? DoB { get; private set; }
     }
 
-    public partial class Customer
+    internal Customer(Email email, Name name) : this()
     {
-        public IReadOnlyCollection<IError> Validate()=> EntityValidationHelper.Validate(this);
-
-        public IReadOnlyCollection<IError> Update(string firstName, string? lastName, DateOnly? dob)
-        {
-            FirstName = firstName;
-            LastName = lastName;
-            DoB = dob;
-            return Validate();
-        }
+        Email = email;
+        Name = name;
     }
-
+    
+    public Name? Name { get; private set; }
+    public Email? Email { get; private set; }
+    public DateOnly? DoB { get; private set; }
 }

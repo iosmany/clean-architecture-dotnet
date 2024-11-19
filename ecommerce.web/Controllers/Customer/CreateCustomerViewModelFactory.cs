@@ -7,7 +7,6 @@
 
     sealed class CreateCustomerViewModelFactory : ICreateCustomerViewModelFactory
     {
-
         public RegisterCustomerViewModel Create()
         {
             return new RegisterCustomerViewModel();

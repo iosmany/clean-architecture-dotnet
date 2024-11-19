@@ -1,32 +1,22 @@
-﻿using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
+namespace ecommerce.application.Customer.Queries;
 
-namespace ecommerce.application.Customer.Queries
+using domain.Entities.Customers;
+using ecommerce.application.Persistence;
+
+sealed class CustomersGetList : ICustomersGetList
 {
-    sealed class CustomersGetList : ICustomersGetList
+    readonly ICustomerRepositoryFacade _repositoryFacade;
+    public CustomersGetList(ICustomerRepositoryFacade repositoryFacade)
     {
-        readonly IDatabaseService _databaseService;
-        public CustomersGetList(IDatabaseService databaseService)
-        {
-            _databaseService = databaseService;
-        }
+        _repositoryFacade = repositoryFacade;
+    }
 
-        public async IAsyncEnumerable<CustomerModel> GetAsync(Func<domain.Entities.Customers.Customer, bool> predicate)
+    public async IAsyncEnumerable<CustomerModel> GetAsync(Func<Customer, bool> predicate)
+    {
+        await foreach (var customer in _repositoryFacade.GetCustomersAsync(predicate))
         {
-            var query = _databaseService.Customers.Where(predicate).AsQueryable();
-
-            foreach (var customer in await query.ToListAsync())
-            {
-                yield return new CustomerModel
-                {
-                    Id = customer.Id,
-                    FirstName = customer.FirstName,
-                };
-            }
+            yield return new CustomerModel();
         }
     }
 }

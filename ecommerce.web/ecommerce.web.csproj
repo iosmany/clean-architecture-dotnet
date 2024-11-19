@@ -20,4 +20,10 @@
     <ProjectReference Include="..\ecommerce.persistence\ecommerce.persistence.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Controllers\Basket\" />
+    <Folder Include="Controllers\Products\" />
+    <Folder Include="Controllers\Sales\" />
+  </ItemGroup>
+
 </Project>
