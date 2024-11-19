@@ -13,6 +13,7 @@
 /ecommerce.domain/bin/Debug/net8.0
 /.vs/
 /.vs/**
+/src/.vs/
 /ecommerce.specification/obj/Debug/net8.0
 /ecommerce.specification/obj
 /ecommerce.specification/bin/Debug/net8.0
