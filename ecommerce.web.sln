@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.web", "ecommerce.web.csproj", "{51C482B0-1B8A-4A88-8CC6-73CB943CFF25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.web", "ecommerce.web\ecommerce.web.csproj", "{51C482B0-1B8A-4A88-8CC6-73CB943CFF25}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.domain", "..\ecommerce.domain\ecommerce.domain.csproj", "{C6AB1B62-EF21-49D4-ACCB-23085C4CB6C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.domain", "ecommerce.domain\ecommerce.domain.csproj", "{C6AB1B62-EF21-49D4-ACCB-23085C4CB6C8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.infrastructure", "..\ecommerce.infrastructure\ecommerce.infrastructure.csproj", "{56291854-9E94-4BD8-B7E4-EBDD4EFD45C3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.infrastructure", "ecommerce.infrastructure\ecommerce.infrastructure.csproj", "{56291854-9E94-4BD8-B7E4-EBDD4EFD45C3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.core", "..\ecommerce.core\ecommerce.core.csproj", "{660B7A0A-133D-4C67-B6D8-CA94CE158D12}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.core", "ecommerce.core\ecommerce.core.csproj", "{660B7A0A-133D-4C67-B6D8-CA94CE158D12}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.application", "..\ecommerce.application\ecommerce.application.csproj", "{8CA48B75-072E-41C0-B341-AA019B11EDE6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.application", "ecommerce.application\ecommerce.application.csproj", "{8CA48B75-072E-41C0-B341-AA019B11EDE6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.persistence", "..\ecommerce.persistence\ecommerce.persistence.csproj", "{28B0D7CD-A95B-4B35-986D-321AB4F321BD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ecommerce.persistence", "ecommerce.persistence\ecommerce.persistence.csproj", "{28B0D7CD-A95B-4B35-986D-321AB4F321BD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecommerce.specification", "..\ecommerce.specification\ecommerce.specification.csproj", "{9E135E5B-5725-422B-8DAF-59DBF1052D22}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ecommerce.specification", "ecommerce.specification\ecommerce.specification.csproj", "{9E135E5B-5725-422B-8DAF-59DBF1052D22}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
