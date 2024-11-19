@@ -1,12 +1,12 @@
 ﻿
 namespace ecommerce.core.Commands;
 
-public interface IQuery
+public interface IQuery<Rp>
 {
-    Task ExecuteAsync(CancellationToken cancellationToken);
+    Task<Rp> ExecuteAsync(CancellationToken cancellationToken);
 }
 
-public interface IQuery<R>
+public interface IQuery<Rq, Rp>
 {
-    Task ExecuteAsync(R request, CancellationToken cancellationToken);
+    Task<Rp> ExecuteAsync(Rq request, CancellationToken cancellationToken);
 }

@@ -1,7 +1,7 @@
-﻿using ecommerce.domain.Entities.Core;
+﻿using ecommerce.domain.Entities.Catalog.Categories;
+using ecommerce.domain.Entities.Core;
 using ecommerce.domain.Entities.Customers;
-using ecommerce.domain.Entities.Products;
-using LanguageExt.Pretty;
+using ecommerce.domain.Entities.Catalog.Products;
 using LanguageExt.UnsafeValueAccess;
 using NUnit.Framework;
 
@@ -22,13 +22,14 @@ namespace ecommerce.domain.Entities.Sales
         Address CreateAddress()
         {
             var country = new Country("US", "United States");
-            var address = Address.Create("some address", "", "FL", "33193", country);
+            var address = Address.Create("some address", "", "FL", "33193", "785566321", country);
             Assert.That(address.IsRight, Is.True, "Address should be right expression");
             return address.ValueUnsafe();
         }
         Product CreateProduct()
         {
-            return new Product("Some product", 10.0m);
+            var category = new Category("Some category", "Some category");
+            return new Product("Some product", 10.0m, category);
         }
 
         (Product, Sale, SaleLine) CreateSaleLine()

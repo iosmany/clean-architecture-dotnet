@@ -1,22 +1,24 @@
 ﻿
 namespace ecommerce.application.Customer.Queries;
 
-using domain.Entities.Customers;
 using ecommerce.application.Persistence;
+using ecommerce.core;
+using LanguageExt;
+using System.Collections.Generic;
+using System.Threading;
+using System.Threading.Tasks;
 
 sealed class CustomersGetList : ICustomersGetList
 {
-    readonly ICustomerRepositoryFacade _repositoryFacade;
-    public CustomersGetList(ICustomerRepositoryFacade repositoryFacade)
+    readonly ICustomerRepository _repository;
+    public CustomersGetList(ICustomerRepository repository)
     {
-        _repositoryFacade = repositoryFacade;
+        _repository = repository;
     }
 
-    public async IAsyncEnumerable<CustomerModel> GetAsync(Func<Customer, bool> predicate)
+    public async Task<Either<IReadOnlyCollection<IError>, IEnumerable<CustomerModel>>> ExecuteAsync(CancellationToken cancellationToken)
     {
-        await foreach (var customer in _repositoryFacade.GetCustomersAsync(predicate))
-        {
-            yield return new CustomerModel();
-        }
+        return (await _repository.GetAllAsync(cancellationToken))
+            .Select(m => new CustomerModel(m)).ToList();
     }
 }

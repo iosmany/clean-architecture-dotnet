@@ -2,7 +2,7 @@
 
 namespace ecommerce.core.EF
 {
-    public sealed class PredicateBuilder<E> where E: class, new()
+    public sealed class PredicateBuilder<E> where E: class
     {
         private Expression<Func<E, bool>> _predicate;
         public PredicateBuilder()

@@ -27,7 +27,7 @@ namespace ecommerce.persistence.Shared
             if (repository != null)
                 return repository;
 
-            repository = new Repository<E>(_databaseService, _databaseService.Set<E>());
+            repository = new Repository<E>(_databaseService);
             repos.TryAdd(typeof(IRepository<E>), repository);
             return repository;
         }

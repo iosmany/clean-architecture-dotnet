@@ -1,9 +1,4 @@
 ﻿using NUnit.Framework;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ecommerce.core
 {
@@ -15,7 +10,6 @@ namespace ecommerce.core
         {
             var date = DateTime.Now;
             var dateOnly = date.ToDateOnly();
-            Assert.That(dateOnly, Is.EqualTo(dateOnly));
         }
     }
 }

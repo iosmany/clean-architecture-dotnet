@@ -12,19 +12,12 @@ namespace ecommerce.web.Controllers.Customer
         {
         }
 
-
-
         [Test]
         public void Test1()
         {
-            // Arrange
             var controller = new CustomerController();
-
-            // Act
             var result = controller.Index();
-
-            // Assert
-            Assert.IsInstanceOf<ViewResult>(result);
+            Assert.That(result, Is.InstanceOf(typeof(ViewResult)));
         }
 
     }

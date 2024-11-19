@@ -14,14 +14,6 @@ namespace ecommerce.web.Controllers.Customer
         [DataType(DataType.Date)]
         public DateOnly? DoB { get; set; }
 
-        public RegisterCustomerModel Build()
-        {
-            return new RegisterCustomerModel
-            {
-                FirstName = FirstName,
-                LastName = LastName,
-                DoB = DoB
-            };
-        }
+     
     }
 }

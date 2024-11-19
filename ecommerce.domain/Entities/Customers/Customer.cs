@@ -1,4 +1,6 @@
-﻿namespace ecommerce.domain.Entities.Customers;
+﻿using ecommerce.core;
+
+namespace ecommerce.domain.Entities.Customers;
 
 public class Customer : AuditEntity
 {
@@ -12,7 +14,24 @@ public class Customer : AuditEntity
         Name = name;
     }
     
-    public Name? Name { get; private set; }
-    public Email? Email { get; private set; }
+    public Name Name { get; private set; }
+    public Email Email { get; private set; }
     public DateOnly? DoB { get; private set; }
+
+    public IReadOnlyCollection<IError> Update(string firstName, string lastName, DateOnly dob)
+    {
+        DoB = dob;
+        return Name.Create(firstName, lastName)
+           .MatchUnsafe<IReadOnlyCollection<IError>>(
+                name =>
+                {
+                    Name = name;
+                    return System.Array.Empty<IError>();
+                },
+                error =>
+                {
+                    return ErrorFactory.Multiple(error);
+                }
+            );
+    }
 }

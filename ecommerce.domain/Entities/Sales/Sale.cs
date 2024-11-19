@@ -1,5 +1,5 @@
 ﻿using ecommerce.core.EF;
-using ecommerce.domain.Entities.Products;
+using ecommerce.domain.Entities.Catalog.Products;
 using System.ComponentModel.DataAnnotations.Schema;
 
 namespace ecommerce.domain.Entities.Sales
@@ -7,20 +7,19 @@ namespace ecommerce.domain.Entities.Sales
     [Table("Sales")]
     public class Sale : AuditEntity
     {
-        private Sale()
+        protected Sale()
         {
         }
 
-        public Sale(Customers.Customer customer, Address address) : this()
+        internal Sale(Customers.Customer customer, Address address) : this()
         {
             Customer = customer;
             Address = address;
         }
 
         public virtual Address Address { get; private set; }
-        public virtual Customers.Customer? Customer { get; private set; } //lazy loading
+        public virtual Customers.Customer Customer { get; private set; } //lazy loading
         public DateTimeOffset Date { get; private set; }
-
 
         readonly List<SaleLine> _saleLines = new List<SaleLine>();
         public virtual IReadOnlyCollection<SaleLine> SaleLines => _saleLines;

@@ -1,10 +1,7 @@
 ﻿using ecommerce.core;
 using ecommerce.domain.Entities.Core;
-using LanguageExt;
 
 namespace ecommerce.domain.Entities;
-
-using static LanguageExt.Prelude;
 
 public class Address : ValueObject
 {
@@ -12,14 +9,16 @@ public class Address : ValueObject
     public string City { get; }
     public string State { get; }
     public string ZipCode { get; }
+    public string Phone { get; }
     public virtual Country Country { get; }
 
-    private Address(string street, string city, string state, string zipCode, Country country)
+    private Address(string street, string city, string state, string zipCode, string phone, Country country)
     {
         Street = street;
         City = city;
         State = state;
         ZipCode = zipCode;
+        Phone = phone;  
         Country = country;
     }
 
@@ -31,7 +30,7 @@ public class Address : ValueObject
         yield return ZipCode;
     }
 
-    public static Either<IError, Address> Create(string street, string city, string state, string zipCode, Country country)
+    public static Either<IError, Address> Create(string street, string city, string state, string zipCode, string phone, Country country)
     {
         if (string.IsNullOrWhiteSpace(street))
             return Left(ErrorFactory.New("Street is required", nameof(street)));
@@ -40,7 +39,7 @@ public class Address : ValueObject
         if (string.IsNullOrWhiteSpace(zipCode))
             return Left(ErrorFactory.New("ZipCode is required", nameof(zipCode)));
 
-        return new Address(street, city, state, zipCode, country);
+        return new Address(street, city, state, zipCode, phone, country);
     }
 
 

@@ -15,13 +15,13 @@ public sealed class CustomerFilterBuilder
     public CustomerFilterBuilder WithFirstName(string firstName)
     {
         if (!string.IsNullOrWhiteSpace(firstName))
-            builder.And(c => c.FirstName.Contains(firstName));
+            builder.And(c => c.Name.FirstName.Contains(firstName));
         return this;
     }
     public CustomerFilterBuilder WithLastName(string lastName)
     {
         if (!string.IsNullOrWhiteSpace(lastName))
-            builder.And(c => c.LastName != null && c.LastName.Contains(lastName));
+            builder.And(c => c.Name.LastName != null && c.Name.LastName.Contains(lastName));
         return this;
     }
     public CustomerFilterBuilder WithDoB(DateOnly? dob)

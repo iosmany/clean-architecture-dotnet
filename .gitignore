@@ -16,3 +16,6 @@
 /ecommerce.specification/obj/Debug/net8.0
 /ecommerce.specification/obj
 /ecommerce.specification/bin/Debug/net8.0
+/ecommerce.application/bin/Debug/net8.0
+/ecommerce.persistence/bin/Debug/net8.0
+/ecommerce.web/bin/Debug/net8.0

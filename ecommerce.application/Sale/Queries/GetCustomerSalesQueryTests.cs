@@ -4,7 +4,6 @@ using NUnit.Framework;
 
 namespace ecommerce.application.Sale.Queries;
 
-[TestFixture]
 class GetCustomerSalesQueryTests
 {
 

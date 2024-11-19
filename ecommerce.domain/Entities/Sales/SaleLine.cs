@@ -1,4 +1,4 @@
-﻿using ecommerce.domain.Entities.Products;
+﻿using ecommerce.domain.Entities.Catalog.Products;
 
 namespace ecommerce.domain.Entities.Sales;
 

@@ -2,6 +2,6 @@
 
 using ecommerce.domain.Entities.Sales;
 
-internal interface ISaleRepository : IRepository<Sale>
+public interface ISaleRepository : IRepository<Sale>
 {
 }

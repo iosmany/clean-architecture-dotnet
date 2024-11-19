@@ -1,7 +1,7 @@
 ﻿using ecommerce.application;
-using ecommerce.domain.Entities.Categories;
+using ecommerce.domain.Entities.Catalog.Categories;
 using ecommerce.domain.Entities.Core;
-using ecommerce.domain.Entities.Products;
+using ecommerce.domain.Entities.Catalog.Products;
 using ecommerce.domain.Entities.Sales;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Storage;

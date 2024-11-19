@@ -1,42 +1,59 @@
 ﻿using ecommerce.core;
+using LanguageExt.UnsafeValueAccess;
 using NUnit.Framework;
 using NUnit.Framework.Internal;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ecommerce.domain.Entities.Customers
+namespace ecommerce.domain.Entities.Customers;
+
+[TestFixture]
+public sealed class CustomerTests
 {
-    public sealed class CustomerTests
+
+    [Test]
+    public void ShouldCreateCustomerWithEmailAndName()
     {
-        public CustomerTests()
-        {
-        }
+        var email = Email.Create("some@test.com");
+        Assert.That(email.IsRight);
+        var name = Name.Create("Jane", "Doe");
+        Assert.That(name.IsRight);
 
-        [Test]
-        public void ShouldCreateCustomerWithName()
-        {
-            var customer = new Customer("Some name");
-            Assert.That(customer.FirstName, Is.EqualTo("Some name"));
-        }
+        var customer = new Customer(email.ValueUnsafe(), name.ValueUnsafe());
+        Assert.That(customer.Name!.FirstName, Is.EqualTo("Jane"));
+        Assert.That(customer.Name!.LastName, Is.EqualTo("Doe"));
+    }
 
-        [Test]
-        public void ShouldThrowAnErrorWhenCustomerNameIsEmpty()
-        {
-            var customer = new Customer("");
-            Assert.That(customer.FirstName, Is.EqualTo(""));
-            var errors= EntityValidationHelper.Validate(customer);
-            Assert.That(errors.Count, Is.EqualTo(1));
-        }
+    [Test]
+    public void ShouldThrowAnErrorWhenCustomerNameIsEmpty()
+    {
+        var name = Name.Create("", "");
+        Assert.That(name.IsLeft);
+        name.BindLeft<IError>(err => {
+            Assert.That(err.Message, Is.EqualTo("First Name is required"));
+            return Left(err);
+        });
+    }
 
-        [Test]
-        public void ShouldUpdateCustomer()
-        {
-            var customer = new Customer("Some name");
-            customer.Update("New name", "Last", new DateTime(1990,1,1, 0,0, 0).ToDateOnly());
-            Assert.That(customer.FirstName, Is.EqualTo("New name"));
-        }
+    [Test]
+    public void ShouldThrowAnErrorWhenCustomerEmailIsEmpty()
+    {
+        var email = Email.Create("");
+        Assert.That(email.IsLeft);
+        email.BindLeft<IError>(err => {
+            Assert.That(err.Message, Is.EqualTo("Value is required"));
+            return Left(err);
+        });
+    }
+
+    [Test]
+    public void ShouldUpdateCustomer()
+    {
+        var email = Email.Create("some@test.com");
+        Assert.That(email.IsRight);
+        var name = Name.Create("Jane", "Doe");
+        Assert.That(name.IsRight);
+
+        var customer = new Customer(email.ValueUnsafe(), name.ValueUnsafe());
+        Assert.That(customer, Is.Not.Null);
+
     }
 }

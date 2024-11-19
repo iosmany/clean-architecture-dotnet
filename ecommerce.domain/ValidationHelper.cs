@@ -11,7 +11,7 @@ namespace ecommerce.domain
             var validationResults = new List<ValidationResult>();
             bool isValid = Validator.TryValidateObject(obj, context, validationResults, true);
             if (isValid)
-                return Array.Empty<IError>();
+                return System.Array.Empty<IError>();
 
             var errors = new List<IError>();
             foreach (var validationResult in validationResults)

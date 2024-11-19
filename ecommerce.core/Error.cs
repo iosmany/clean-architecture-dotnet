@@ -23,6 +23,8 @@
             => new Error(message, field);
         public static IReadOnlyCollection<IError> Multiple(params string[] messages)
             => messages.Select(m => new Error(m)).ToList();
+        public static IReadOnlyCollection<IError> Multiple(params IError[] messages)
+           => messages.ToList();
 
     }
 }

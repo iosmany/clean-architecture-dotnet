@@ -1,8 +1,6 @@
-﻿
+﻿using NUnit.Framework;
 
-using NUnit.Framework;
-
-namespace ecommerce.domain.Entities.Categories;
+namespace ecommerce.domain.Entities.Catalog.Categories;
 
 [TestFixture]
 public class CategoryTests
