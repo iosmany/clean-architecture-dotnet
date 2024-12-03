@@ -24,4 +24,4 @@ Should be Docker installed
 
 For running redis you should open command console on root folder and run:
 > docker-compose up -d
-This is going to set up redis on your maching by executing the .yml config file.
+This is going to set up redis on your machine by executing the .yml config file.
